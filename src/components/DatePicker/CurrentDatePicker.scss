@@ -1,0 +1,31 @@
+.root {
+    position: absolute;
+    width: 260px;
+    height: 34px;
+    left: 7px;
+    bottom: 7px;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+}
+
+.picker {
+    flex: 1 1;
+}
+
+.btns {
+    width: 40px;
+    padding: 0px;
+    display: flex;
+    text-align: right;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    .thinBtn {
+        width: 16px;
+        border-radius: 2px;
+        font-size: 22px;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,145 @@
+@import "~styles/colors";
+
+.root {
+    position: absolute !important;
+    box-sizing: border-box;
+    :global(*) {
+        box-sizing: border-box;
+    }
+}
+
+.title {
+    padding: 10px 24px;
+    position: relative;
+    background: #f3f3f3;
+    border-bottom: 1px solid #dedede;
+    h6 {
+        font-size: 16px;
+    }
+}
+
+.closeButton {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    color: #9e9e9e;
+}
+
+.content {
+    width: 500px;
+    padding: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.buttonRow {
+    text-align: right;
+}
+
+.modalBackdrop {
+    position: absolute !important;
+}
+
+.controlsContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    flex-basis: 55px;
+    min-height: 55px;
+    max-height: 55px;
+    height: 55px;
+    z-index: 1;
+    padding: 0px 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.08), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    .textInputRoot {
+        width: 145px;
+        .inputWrapper {
+            font-size: 12px;
+        }
+        .input {
+            padding: 8px 6px;
+        }
+    }
+    .ctrlBtnWrapper {
+        display: inline-block;
+        flex: 1 1 auto;
+        text-align: right;
+        .ctrlBtn {
+            padding: 0px 4px;
+            font-size: 12px;
+        }
+    }
+}
+.inputLabelRoot {
+    transform: translate(14px, 6px) scale(1);
+}
+
+.layerList {
+    width: 100%;
+    background-color: white;
+    flex: 1 1 auto;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.pageCtrls {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background: #f3f3f3;
+    border-top: 1px solid #dedede;
+    .pageNum {
+        font-size: 12px;
+    }
+    .activePageNum {
+        color: $color-primary;
+    }
+    .pageCtrlLeft {
+        flex-basis: 190px;
+        width: 190px;
+        display: inline-block;
+        text-align: left;
+        padding-left: 16px;
+        justify-content: flex-start;
+    }
+    .pageCtrlRight {
+        flex: 1 1;
+        justify-content: flex-end;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+}
+
+.pageLeftBtn,
+.pageRightBtn,
+.removeLayerBtn {
+    font-size: 22px !important;
+}
+
+.pageRightBtn {
+    transform: rotate(-90deg);
+}
+.pageLeftBtn {
+    transform: rotate(90deg);
+}
+
+.listItem {
+    padding-right: 46px;
+    .layerTitle {
+        white-space: normal;
+        overflow: hidden;
+    }
+}
+
+.rightAction {
+    right: 16px;
+}
+
+.emptyLabel {
+    padding: 7px 9px;
+}

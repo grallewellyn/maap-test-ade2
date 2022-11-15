@@ -1,0 +1,95 @@
+.root {
+    position: absolute !important;
+    box-sizing: border-box;
+    :global(*) {
+        box-sizing: border-box;
+    }
+}
+
+.title {
+    padding: 10px 24px;
+    position: relative;
+    background: #f3f3f3;
+    border-bottom: 1px solid #dedede;
+    h6 {
+        font-size: 16px;
+    }
+}
+
+.closeButton {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    color: #9e9e9e;
+}
+
+.content {
+    padding: 10px 24px 24px;
+}
+
+.buttonRow {
+    text-align: right;
+}
+
+.commandText {
+    composes: fontRobotoMono from "../../_core/styles/text.scss";
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    user-select: text;
+    cursor: text;
+    margin: 5px 0px 12px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 4px 7px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.hiddenCmdText {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modalBackdrop {
+    position: absolute !important;
+}
+
+.optionsRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    .formInputWrapper {
+        font-size: 16px;
+    }
+
+    .formInput {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .formControl,
+    .datePickerWrapper {
+        width: 200px;
+        flex-basis: 200px;
+        margin: 8px 0px;
+    }
+
+    .datePicker {
+        margin-top: 21px;
+    }
+}
+
+.menuItemText {
+    font-size: 14px;
+}
+
+.menuWrapper {
+    max-height: 400px;
+}

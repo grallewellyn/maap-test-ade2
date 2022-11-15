@@ -1,0 +1,12 @@
+@import "~styles/colors";
+
+.controlLabel {
+    background: $color-primary;
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}

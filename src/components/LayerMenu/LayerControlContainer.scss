@@ -1,0 +1,59 @@
+.layerControl {
+    height: 38px;
+    padding-right: 4px;
+    &.layerControlActive {
+        padding-right: 0px;
+        .layerControlIconRow {
+            display: inline-block;
+        }
+        .topContent {
+            padding-top: 0px;
+        }
+    }
+}
+
+.popover {
+    z-index: 1;
+}
+
+.positionPopover {
+    transform: translate(-4px, 0px);
+}
+
+.topContent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-top: 2px;
+}
+
+.layerTitle {
+    padding: 0px;
+    flex: 1 1;
+    font-size: 13px;
+}
+
+.layerControlIconRow {
+    padding: 5px 8px;
+    position: relative;
+    display: none;
+    vertical-align: top;
+}
+
+.iconButtonSmall {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 22px !important;
+    color: rgba(0, 0, 0, 0.54);
+    span span {
+        left: -23px;
+        top: -11px;
+        font-size: 12px;
+    }
+}
+
+.controlsMessage {
+    composes: fontRobotoMono from "../../_core/styles/text.scss";
+    font-size: 12px;
+    padding: 0px 3px;
+}

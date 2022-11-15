@@ -1,0 +1,230 @@
+{
+    "layers": [
+        {
+            "id": "BlueMarble_LatLon",
+            "title": "Blue Marble, Shaded Relief w/Bathymetry",
+            "type": "basemap",
+            "isDefault": true,
+            "handleAs": "GIBS_raster",
+            "updateParameters": {
+                "time": false
+            },
+            "mappingOptions": {
+                "matrixSet": "500m",
+                "requestEncoding": "REST",
+                "extents": [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ],
+                "urlFunctions": {},
+                "tileFunctions": {},
+                "url": "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/BlueMarble_ShadedRelief_Bathymetry/default/2019-01-01/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpeg",
+                "projection": "EPSG:4326",
+                "layer": "BlueMarble_ShadedRelief_Bathymetry",
+                "tileGrid": {
+                    "origin": [
+                        -180,
+                        90
+                    ],
+                    "resolutions": [
+                        0.5625,
+                        0.28125,
+                        0.140625,
+                        0.0703125,
+                        0.03515625,
+                        0.017578125,
+                        0.0087890625,
+                        0.00439453125
+                    ],
+                    "matrixIds": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7"
+                    ],
+                    "tileSize": 512,
+                    "minZoom": 0,
+                    "maxZoom": 7
+                },
+                "format": "image/jpeg"
+            }
+        },
+        {
+            "id": "BlueMarble_WebMercator",
+            "title": "Blue Marble, Shaded Relief w/Bathymetry",
+            "type": "basemap",
+            "isDefault": true,
+            "handleAs": "GIBS_raster",
+            "updateParameters": {
+                "time": false
+            },
+            "mappingOptions": {
+                "matrixSet": "GoogleMapsCompatible_Level8",
+                "requestEncoding": "REST",
+                "extents": [
+                    -20037508.34278925,
+                    -20037508.34278925,
+                    20037508.34278925,
+                    20037508.34278925
+                ],
+                "urlFunctions": {},
+                "tileFunctions": {},
+                "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_ShadedRelief_Bathymetry/default/2019-01-01/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpeg",
+                "projection": "EPSG:3857",
+                "layer": "BlueMarble_ShadedRelief_Bathymetry",
+                "tileGrid": {
+                    "origin": [
+                        -20037508.34278925,
+                        20037508.34278925
+                    ],
+                    "resolutions": [
+                        156543.03392804085,
+                        78271.51696402043,
+                        39135.75848201021,
+                        19567.879241005106,
+                        9783.939620502553,
+                        4891.969810251277,
+                        2445.9849051256383,
+                        1222.9924525628192,
+                        611.4962262814096
+                    ],
+                    "matrixIds": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ],
+                    "tileSize": 256,
+                    "minZoom": 0,
+                    "maxZoom": 8
+                },
+                "format": "image/jpeg"
+            }
+        },
+        {
+            "id": "Land_Water_Mask_LatLon",
+            "title": "Land/Water Map",
+            "type": "basemap",
+            "handleAs": "GIBS_raster",
+            "updateParameters": {
+                "time": false
+            },
+            "mappingOptions": {
+                "matrixSet": "250m",
+                "requestEncoding": "REST",
+                "extents": [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ],
+                "urlFunctions": {},
+                "tileFunctions": {},
+                "url": "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/OSM_Land_Water_Map/default/2019-01-01/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png",
+                "projection": "EPSG:4326",
+                "layer": "OSM_Land_Water_Map",
+                "tileGrid": {
+                    "origin": [
+                        -180,
+                        90
+                    ],
+                    "resolutions": [
+                        0.5625,
+                        0.28125,
+                        0.140625,
+                        0.0703125,
+                        0.03515625,
+                        0.017578125,
+                        0.0087890625,
+                        0.00439453125,
+                        0.002197265625
+                    ],
+                    "matrixIds": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ],
+                    "tileSize": 512,
+                    "minZoom": 0,
+                    "maxZoom": 8
+                },
+                "format": "image/png"
+            }
+        },
+        {
+            "id": "Land_Water_Mask_WebMercator",
+            "title": "Land/Water Map",
+            "type": "basemap",
+            "handleAs": "GIBS_raster",
+            "updateParameters": {
+                "time": false
+            },
+            "mappingOptions": {
+                "matrixSet": "GoogleMapsCompatible_Level9",
+                "requestEncoding": "REST",
+                "extents": [
+                    -20037508.34278925,
+                    -20037508.34278925,
+                    20037508.34278925,
+                    20037508.34278925
+                ],
+                "urlFunctions": {},
+                "tileFunctions": {},
+                "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/OSM_Land_Water_Map/default/2019-01-01/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png",
+                "projection": "EPSG:3857",
+                "layer": "OSM_Land_Water_Map",
+                "tileGrid": {
+                    "origin": [
+                        -20037508.34278925,
+                        20037508.34278925
+                    ],
+                    "resolutions": [
+                        156543.03392804085,
+                        78271.51696402043,
+                        39135.75848201021,
+                        19567.879241005106,
+                        9783.939620502553,
+                        4891.969810251277,
+                        2445.9849051256383,
+                        1222.9924525628192,
+                        611.4962262814096,
+                        305.7481131407048
+                    ],
+                    "matrixIds": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9"
+                    ],
+                    "tileSize": 256,
+                    "minZoom": 0,
+                    "maxZoom": 9
+                },
+                "format": "image/png"
+            }
+        }
+    ]
+}

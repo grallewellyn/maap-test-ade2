@@ -1,0 +1,19 @@
+.root {
+    position: absolute;
+}
+
+.contextMenuItem {
+    min-width: 50px;
+    text-align: left;
+    justify-content: left;
+}
+
+.listItemIcon {
+    margin-right: 0px;
+    svg,
+    i {
+        font-size: 22px;
+        padding-left: 1px;
+        padding-top: 0px;
+    }
+}
